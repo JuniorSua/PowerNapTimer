@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Power Nap View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PowerNapViewController" customModule="Master_PowerNap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOj-MJ-OPq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="736"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-Cy-qlK">
+                                <rect key="frame" x="0.0" y="780" width="414" height="82"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                <state key="normal" title="Start Nap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIq-yc-hgn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i7a-Cy-qlK" secondAttribute="bottom" id="0XA-k2-kAz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7a-Cy-qlK" secondAttribute="trailing" id="5qW-7k-bYw"/>
+                            <constraint firstItem="xOj-MJ-OPq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EeQ-1u-Mtu"/>
+                            <constraint firstItem="xOj-MJ-OPq" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="IL7-rc-UY7"/>
+                            <constraint firstItem="xOj-MJ-OPq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S9C-1H-ZyH"/>
+                            <constraint firstItem="i7a-Cy-qlK" firstAttribute="top" secondItem="xOj-MJ-OPq" secondAttribute="bottom" id="adK-zg-XCF"/>
+                            <constraint firstItem="i7a-Cy-qlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fzG-e8-vbY"/>
+                            <constraint firstItem="xOj-MJ-OPq" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="tTc-Hc-CKC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="startStopButton" destination="i7a-Cy-qlK" id="cEy-5Z-jxd"/>
+                        <outlet property="timeLabel" destination="xOj-MJ-OPq" id="dyH-PW-glQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="2434"/>
+        </scene>
+    </scenes>
+</document>
