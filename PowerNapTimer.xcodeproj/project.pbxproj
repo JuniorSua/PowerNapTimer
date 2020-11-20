@@ -25,7 +25,6 @@
 		D4C32DE8243EBD0F0000FC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C32DEB243EBD0F0000FC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C32DED243EBD0F0000FC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C32DF4243EC0E80000FC04 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4C32DF5243ED1C30000FC04 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +58,6 @@
 		D4C32DDE243EBD0E0000FC04 /* Master-PowerNap */ = {
 			isa = PBXGroup;
 			children = (
-				D4C32DF4243EC0E80000FC04 /* README.md */,
 				D4C32DE3243EBD0E0000FC04 /* PowerNapViewController.swift */,
 				D4C32DF5243ED1C30000FC04 /* MyTimer.swift */,
 				D4C32DE5243EBD0E0000FC04 /* Main.storyboard */,
