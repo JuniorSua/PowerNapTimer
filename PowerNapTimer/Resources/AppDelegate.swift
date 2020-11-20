@@ -14,14 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        // 9) Request authorization to send notifications
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (authorizationGranted, error) in
-            if authorizationGranted {
-                print("User has given us permission to send notifications.")
-            }
-        }
         
         return true
     }

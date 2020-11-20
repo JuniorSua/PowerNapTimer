@@ -9,23 +9,19 @@
 /* Begin PBXBuildFile section */
 		D4C32DE0243EBD0E0000FC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C32DDF243EBD0E0000FC04 /* AppDelegate.swift */; };
 		D4C32DE2243EBD0E0000FC04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C32DE1243EBD0E0000FC04 /* SceneDelegate.swift */; };
-		D4C32DE4243EBD0E0000FC04 /* PowerNapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C32DE3243EBD0E0000FC04 /* PowerNapViewController.swift */; };
 		D4C32DE7243EBD0E0000FC04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C32DE5243EBD0E0000FC04 /* Main.storyboard */; };
 		D4C32DE9243EBD0F0000FC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C32DE8243EBD0F0000FC04 /* Assets.xcassets */; };
 		D4C32DEC243EBD0F0000FC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C32DEA243EBD0F0000FC04 /* LaunchScreen.storyboard */; };
-		D4C32DF6243ED1C30000FC04 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C32DF5243ED1C30000FC04 /* MyTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D4C32DDC243EBD0E0000FC04 /* Master-PowerNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master-PowerNap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C32DDF243EBD0E0000FC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C32DE1243EBD0E0000FC04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4C32DE3243EBD0E0000FC04 /* PowerNapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerNapViewController.swift; sourceTree = "<group>"; };
 		D4C32DE6243EBD0E0000FC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C32DE8243EBD0F0000FC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C32DEB243EBD0F0000FC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C32DED243EBD0F0000FC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C32DF5243ED1C30000FC04 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +54,6 @@
 		D4C32DDE243EBD0E0000FC04 /* Master-PowerNap */ = {
 			isa = PBXGroup;
 			children = (
-				D4C32DE3243EBD0E0000FC04 /* PowerNapViewController.swift */,
-				D4C32DF5243ED1C30000FC04 /* MyTimer.swift */,
 				D4C32DE5243EBD0E0000FC04 /* Main.storyboard */,
 				D4C32DF3243EBD600000FC04 /* Resources */,
 			);
@@ -150,10 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C32DE4243EBD0E0000FC04 /* PowerNapViewController.swift in Sources */,
 				D4C32DE0243EBD0E0000FC04 /* AppDelegate.swift in Sources */,
 				D4C32DE2243EBD0E0000FC04 /* SceneDelegate.swift in Sources */,
-				D4C32DF6243ED1C30000FC04 /* MyTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
