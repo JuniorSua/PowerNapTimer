@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Master-PowerNap.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

@@ -1,20 +1,19 @@
 //
 //  AppDelegate.swift
-//  Master-PowerNap
+//  PowerNapTimer34
 //
-//  Created by Apps on 4/8/20.
-//  Copyright © 2020 Cameron Stuart. All rights reserved.
+//  Created by Junior Suarez-Leyva on 11/20/20.
 //
 
 import UIKit
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        // Override point for customization after application launch.
         return true
     }
 
