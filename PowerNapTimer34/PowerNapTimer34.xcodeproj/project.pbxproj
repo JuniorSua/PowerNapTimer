@@ -14,6 +14,7 @@
 		D0824CF12568D58600EAB6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0824CF02568D58600EAB6A3 /* Assets.xcassets */; };
 		D0824CF42568D58600EAB6A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0824CF22568D58600EAB6A3 /* LaunchScreen.storyboard */; };
 		D0824D012568D6D000EAB6A3 /* NapTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0824D002568D6D000EAB6A3 /* NapTimer.swift */; };
+		D0824D06256A076D00EAB6A3 /* NapTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0824D05256A076D00EAB6A3 /* NapTimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D0824CF32568D58600EAB6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0824CF52568D58600EAB6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0824D002568D6D000EAB6A3 /* NapTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTimer.swift; sourceTree = "<group>"; };
+		D0824D05256A076D00EAB6A3 /* NapTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		D0824CE62568D58400EAB6A3 /* PowerNapTimer34 */ = {
 			isa = PBXGroup;
 			children = (
+				D0824D04256A074A00EAB6A3 /* View Controllers */,
 				D0824CFC2568D5BB00EAB6A3 /* Resources */,
 				D0824CFE2568D6A800EAB6A3 /* Views */,
 				D0824CFF2568D6AD00EAB6A3 /* Model */,
@@ -92,6 +95,14 @@
 				D0824D002568D6D000EAB6A3 /* NapTimer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D0824D04256A074A00EAB6A3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0824D05256A076D00EAB6A3 /* NapTimerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0824D06256A076D00EAB6A3 /* NapTimerViewController.swift in Sources */,
 				D0824CEC2568D58400EAB6A3 /* ViewController.swift in Sources */,
 				D0824D012568D6D000EAB6A3 /* NapTimer.swift in Sources */,
 				D0824CE82568D58400EAB6A3 /* AppDelegate.swift in Sources */,
