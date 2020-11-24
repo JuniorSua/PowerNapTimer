@@ -7,6 +7,13 @@
 
 import Foundation
 
+protocol NapTimerDelegate: AnyObject {
+    func timerSecondTicked()
+    func timerStopped()
+    func timerCompleted()
+    
+}
+
 class NapTimer {
     
     var timeRemaining: TimeInterval?
@@ -14,6 +21,8 @@ class NapTimer {
     var isActive: Bool {
         return timeRemaining != nil
     }
+    
+    weak var delegate: NapTimerDelegate?
     
     func startTimer(time: TimeInterval) {
         if !isActive {
@@ -28,9 +37,11 @@ class NapTimer {
         guard let timeLeft = timeRemaining else { return }
         if timeLeft > 0 {
             self.timeRemaining = timeLeft - 1
+            delegate?.timerSecondTicked()
         } else {
             self.timeRemaining = nil
             timeCounter?.invalidate()
+            delegate?.timerCompleted()
             
         }
     }
@@ -38,6 +49,7 @@ class NapTimer {
     func stopTimer() {
         self.timeRemaining = nil
         timeCounter?.invalidate()
+        delegate?.timerCompleted()
         
     }
     

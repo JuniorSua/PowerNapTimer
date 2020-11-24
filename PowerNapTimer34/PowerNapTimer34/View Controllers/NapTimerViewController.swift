@@ -17,8 +17,8 @@ class NapTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        myTimer.delegate = self
     }
     
     
@@ -28,6 +28,8 @@ class NapTimerViewController: UIViewController {
         } else {
             myTimer.startTimer(time: 5)
         }
+        updateLabel()
+        updateButton()
     }
     
     
@@ -36,14 +38,40 @@ class NapTimerViewController: UIViewController {
             guard let timeRemaining = myTimer.timeRemaining else { return }
             let minutes = Int(timeRemaining / 60)
             let seconds = Int(timeRemaining.truncatingRemainder(dividingBy: 60))
+            let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
+            timerLabel.text = "\(minutes):\(secondsString)"
         } else {
-            
+            timerLabel.text = "20:00"
         }
     }
     
     
     func updateButton() {
+        timerButton.setTitle(myTimer.isActive ? "Cancel Nap" : "Start Nap", for: .normal)
+    }
+    
+    
+    func displaySnoozeAlertController() {
         
     }
 
+}
+
+extension NapTimerViewController: NapTimerDelegate {
+    func timerSecondTicked() {
+        updateLabel()
+    }
+    
+    func timerStopped() {
+        updateLabel()
+        updateButton()
+    }
+    
+    func timerCompleted() {
+        updateLabel()
+        updateButton()
+        
+    }
+    
+    
 }
